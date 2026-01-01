@@ -1,0 +1,214 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BytesIO	SU_Hwp_Read_MO.py	/^from io import BytesIO$/;"	i
+GPR_CUR_POS	PRO_OLD/PR_MAIN.py	/^    GPR_CUR_POS = GPR_CUR_POS + '\/'$/;"	v
+GPR_CUR_POS	PRO_OLD/PR_MAIN.py	/^    GPR_CUR_POS = GPR_CUR_POS + '\\\\'$/;"	v
+GPR_CUR_POS	PRO_OLD/PR_MAIN.py	/^GPR_CUR_POS = os.getcwd()       # 현재 실행 위치 담기$/;"	v
+GPR_CUR_POS	PR_Main2.py	/^GPR_CUR_POS  = psai.G_SU_ProFilLoc                               # 현재 실행 위치 담기$/;"	v
+GPR_CUR_POS	PR_Main3.py	/^GPR_CUR_POS  = psai.G_SU_ProFilLoc                               # 현재 실행 위치 담기$/;"	v
+GPR_CUR_POS	PR_Main_Final.py	/^GPR_CUR_POS  = "\/home\/jung100hwa\/PLangVim\/DV_PROCUREMENT\/ALL_FILE\/"                               # 현재 실행 위치 담기$/;"	v
+GPR_CUR_TIME	PRO_OLD/PR_MAIN.py	/^GPR_CUR_TIME = datetime.datetime.now().strftime('%Y-%m-%d')     # 오늘날짜 세팅$/;"	v
+GPR_Connection	PRO_OLD/PR_MAIN.py	/^GPR_Connection = cx_Oracle.connect('scott\/tiger2@192.168.56.1:1521\/XE')$/;"	v
+GPR_Connection	PR_Main2.py	/^GPR_Connection = psai.G_SU_Connection$/;"	v
+GPR_Connection	PR_Main3.py	/^GPR_Connection = psai.G_SU_Connection$/;"	v
+GPR_Cursor	PRO_OLD/PR_MAIN.py	/^GPR_Cursor     =  GPR_Connection.cursor()$/;"	v
+GPR_Cursor	PR_Main2.py	/^GPR_Cursor     = psai.G_SU_Cursor$/;"	v
+GPR_Cursor	PR_Main3.py	/^GPR_Cursor     = psai.G_SU_Cursor$/;"	v
+GPR_INIT_FILEFOLDER	PRO_OLD/PR_MAIN.py	/^GPR_INIT_FILEFOLDER = GPR_CUR_POS + "INITFILE" + GPR_SPLIT_GUBUN        # 원본파일$/;"	v
+GPR_INIT_FILEFOLDER	PR_Main2.py	/^GPR_INIT_FILEFOLDER = GPR_CUR_POS + "INITFILE" + GPR_SPLIT_GUBUN        # 원본파일$/;"	v
+GPR_INIT_FILEFOLDER	PR_Main3.py	/^GPR_INIT_FILEFOLDER = GPR_CUR_POS + "INITFILE" + GPR_SPLIT_GUBUN        # 원본파일$/;"	v
+GPR_LOGFOLDER	PRO_OLD/PR_MAIN.py	/^GPR_LOGFOLDER       = GPR_CUR_POS + "LOG" + GPR_SPLIT_GUBUN             # 로그파일 기록 폴더$/;"	v
+GPR_LOGFOLDER	PR_Main2.py	/^GPR_LOGFOLDER       = GPR_CUR_POS + "LOG" + GPR_SPLIT_GUBUN             # 로그파일 기록 폴더$/;"	v
+GPR_LOGFOLDER	PR_Main3.py	/^GPR_LOGFOLDER       = GPR_CUR_POS + "LOG" + GPR_SPLIT_GUBUN             # 로그파일 기록 폴더$/;"	v
+GPR_PLATFORM	PRO_OLD/PR_MAIN.py	/^GPR_PLATFORM    = platform.system()     # 플랫폼 및 구분자$/;"	v
+GPR_PLATFORM	PR_Main2.py	/^GPR_PLATFORM = platform.system()                                 # 플랫폼 및 구분자$/;"	v
+GPR_PLATFORM	PR_Main3.py	/^GPR_PLATFORM = platform.system()                                 # 플랫폼 및 구분자$/;"	v
+GPR_SPLIT_GUBUN	PRO_OLD/PR_MAIN.py	/^    GPR_SPLIT_GUBUN = '\/'$/;"	v
+GPR_SPLIT_GUBUN	PRO_OLD/PR_MAIN.py	/^    GPR_SPLIT_GUBUN = '\\\\'$/;"	v
+GPR_SPLIT_GUBUN	PRO_OLD/PR_MAIN.py	/^GPR_SPLIT_GUBUN = ''$/;"	v
+GPR_SPLIT_GUBUN	PR_Main2.py	/^GPR_SPLIT_GUBUN     = psai.G_SU_SplitDef$/;"	v
+GPR_SPLIT_GUBUN	PR_Main3.py	/^GPR_SPLIT_GUBUN     = psai.G_SU_SplitDef$/;"	v
+GPR_TRNS_HWPFOLDER	PR_Main2.py	/^GPR_TRNS_HWPFOLDER  = GPR_CUR_POS + "HWP" + GPR_SPLIT_GUBUN             # HWP 조달사업지침서$/;"	v
+GPR_TRNS_HWPFOLDER	PR_Main3.py	/^GPR_TRNS_HWPFOLDER  = GPR_CUR_POS + "HWP" + GPR_SPLIT_GUBUN             # HWP 조달사업지침서$/;"	v
+GPR_TRNS_PDFFOLDER	PRO_OLD/PR_MAIN.py	/^GPR_TRNS_PDFFOLDER  = GPR_CUR_POS + "PDF" + GPR_SPLIT_GUBUN             # PDF 변환파일$/;"	v
+GPR_TRNS_PDFFOLDER	PR_Main2.py	/^GPR_TRNS_PDFFOLDER  = GPR_CUR_POS + "PDF" + GPR_SPLIT_GUBUN             # PDF 변환파일$/;"	v
+GPR_TRNS_PDFFOLDER	PR_Main3.py	/^GPR_TRNS_PDFFOLDER  = GPR_CUR_POS + "PDF" + GPR_SPLIT_GUBUN             # PDF 변환파일$/;"	v
+GPR_TXT_SALVEFOLDER	PR_Main3.py	/^GPR_TXT_SALVEFOLDER = GPR_CUR_POS + "RESULT" + GPR_SPLIT_GUBUN             # HWP 조달사업지침서$/;"	v
+HwpReader	SU_Hwp_Read_MO.py	/^class HwpReader(object):$/;"	c
+Image	PRO_OLD/Pdf_Ocr_Tesseract_tong.py	/^from PIL import Image$/;"	i
+Image	SU_Hwp_Read_MO.py	/^from PIL import Image$/;"	i
+PD	PRO_OLD/hwp_pdf_convert.py	/^import PY_PKG.SU_DirFile_MO as PD$/;"	i
+PY_PKG	PRO_OLD/PR_MAIN.py	/^import PY_PKG.SU_DirFile_MO as pFile$/;"	i
+PY_PKG	PRO_OLD/PR_MAIN.py	/^import PY_PKG.SU_File_Convert as pConvert$/;"	i
+PY_PKG	PRO_OLD/PR_MAIN.py	/^import PY_PKG.SU_Mail_Send_Mo as pMail$/;"	i
+PY_PKG	PRO_OLD/Pdf_Ocr_Tesseract_tong.py	/^import PY_PKG.SU_DirFile_MO as SD$/;"	i
+PY_PKG	PRO_OLD/hwp_pdf_convert.py	/^import PY_PKG.SU_DirFile_MO as PD$/;"	i
+PY_PKG	PRO_OLD/hwp_pdf_convert.py	/^import PY_PKG.SU_File_Convert as SC$/;"	i
+PY_PKG	PRO_OLD/hwp_read_text_sa01.py	/^import PY_PKG.SU_Hwp_Read_MO as phwp$/;"	i
+PY_PKG	PR_Main2.py	/^import PY_PKG.SU_ALLMO_Init_MO as psai$/;"	i
+PY_PKG	PR_Main2.py	/^import PY_PKG.SU_DirFile_MO as pFile$/;"	i
+PY_PKG	PR_Main2.py	/^import PY_PKG.SU_File_Convert as pConvert$/;"	i
+PY_PKG	PR_Main2.py	/^import PY_PKG.SU_Mail_Send_Mo as pMail$/;"	i
+PY_PKG	PR_Main3.py	/^import PY_PKG.SU_ALLMO_Init_MO as psai$/;"	i
+PY_PKG	PR_Main3.py	/^import PY_PKG.SU_DirFile_MO as pFile$/;"	i
+PY_PKG	PR_Main3.py	/^import PY_PKG.SU_File_Convert as pConvert$/;"	i
+PY_PKG	PR_Main3.py	/^import PY_PKG.SU_Folder_Monitoring_MO as psfm$/;"	i
+PY_PKG	PR_Main3.py	/^import PY_PKG.SU_Mail_Send_Mo as pMail$/;"	i
+SC	PRO_OLD/hwp_pdf_convert.py	/^import PY_PKG.SU_File_Convert as SC$/;"	i
+SD	PRO_OLD/Pdf_Ocr_Tesseract_tong.py	/^import PY_PKG.SU_DirFile_MO as SD$/;"	i
+SU_FOLD_MONITORING2	PR_Main_Final.py	/^def SU_FOLD_MONITORING2(sourceFolder, targetFolder, strNum):$/;"	f
+SU_MO_FileWrite3	PR_Main_Final.py	/^def SU_MO_FileWrite3(Source, FileConList, SplitDef, reSize):$/;"	f
+SU_MO_FileWrite4	PR_Main_Final.py	/^def SU_MO_FileWrite4(targetfolder, filename, filecon):$/;"	f
+SU_MO_FindFilename	PR_Main_Final.py	/^def SU_MO_FindFilename(Source, FName):$/;"	f
+SU_MO_HwpRead_Extract	PR_Main_Final.py	/^def SU_MO_HwpRead_Extract(Targetfile):$/;"	f
+SU_MO_HwpRead_Hwpx	PR_Main_Final.py	/^def SU_MO_HwpRead_Hwpx(SourceFolder, sfile):$/;"	f
+SU_MO_TimeReturn	PR_Main_Final.py	/^def SU_MO_TimeReturn(gubun):$/;"	f
+SU_MO_TimeReturn2	PR_Main_Final.py	/^def SU_MO_TimeReturn2():$/;"	f
+__init__	SU_Hwp_Read_MO.py	/^    def __init__(self, filePath, fileName):$/;"	m	class:HwpReader
+binStream	SU_Hwp_Read_MO.py	/^    def binStream(self, filePath):$/;"	m	class:HwpReader
+binStream2img	SU_Hwp_Read_MO.py	/^    def binStream2img(self, filePath, section):$/;"	m	class:HwpReader
+bodySection2txt	SU_Hwp_Read_MO.py	/^    def bodySection2txt(self, section):$/;"	m	class:HwpReader
+bodyStream	SU_Hwp_Read_MO.py	/^    def bodyStream(self):  # dictionary형태로 돌려줌$/;"	m	class:HwpReader
+char	SU_Hwp_Read_MO.py	/^class char(object):$/;"	c
+client	PRO_OLD/hwp_pdf_convert.py	/^import win32com.client$/;"	i
+config	PRO_OLD/Pdf_Ocr_Tesseract_tong.py	/^config = ('-l kor --oem 1 --psm 4')$/;"	v
+control_char_table	SU_Hwp_Read_MO.py	/^control_char_table = {$/;"	v
+cv2	PRO_OLD/Pdf_Ocr_Tesseract_tong.py	/^import cv2$/;"	i
+cx_Oracle	PRO_OLD/PR_MAIN.py	/^import cx_Oracle$/;"	i
+cx_Oracle	PR_Main2.py	/^import cx_Oracle$/;"	i
+cx_Oracle	PR_Main3.py	/^import cx_Oracle$/;"	i
+cx_Oracle	PR_Main_Final.py	/^import cx_Oracle$/;"	i
+datetime	PRO_OLD/PR_MAIN.py	/^import datetime$/;"	i
+datetime	PR_Main2.py	/^import datetime$/;"	i
+datetime	PR_Main3.py	/^import datetime$/;"	i
+datetime	PR_Main_Final.py	/^import datetime$/;"	i
+easyocr	PRO_OLD/Pdf_Ocr_Tesseract_tong.py	/^import easyocr$/;"	i
+extended	SU_Hwp_Read_MO.py	/^class extended(object):$/;"	c
+files	PRO_OLD/hwp_pdf_convert.py	/^files = [f for f in os.listdir(getPath) if re.match('.*[.]hwp', f)]$/;"	v
+getPath	PRO_OLD/hwp_pdf_convert.py	/^getPath = "c:\\\\temp\\\\hwp\\\\"$/;"	v
+glob	PR_Main_Final.py	/^import glob$/;"	i
+headerList	SU_Hwp_Read_MO.py	/^    def headerList(self):$/;"	m	class:HwpReader
+hwp	PRO_OLD/hwp_pdf_convert.py	/^hwp = win32com.client.gencache.EnsureDispatch('HWPFrame.HwpObject')$/;"	v
+hwpReader	PRO_OLD/hwp_read_text_sa01.py	/^hwpReader = hwpReader.bodyStream()$/;"	v
+hwpReader	PRO_OLD/hwp_read_text_sa01.py	/^hwpReader = phwp.HwpReader('c:\\\\temp\\\\hwp', '03.서약서.hwp')$/;"	v
+img	PRO_OLD/Pdf_Ocr_Tesseract_tong.py	/^img = cv2.imread(imgPath, cv2.IMREAD_GRAYSCALE)$/;"	v
+imgPath	PRO_OLD/Pdf_Ocr_Tesseract_tong.py	/^imgPath = "c:\\\\work\\\\PLangVim\\\\Procurement\\\\IMG\\\\test.jpeg"$/;"	v
+inline	SU_Hwp_Read_MO.py	/^class inline(object):$/;"	c
+io	PR_Main_Final.py	/^import io$/;"	i
+listNo	PRO_OLD/PR_MAIN.py	/^        listNo = ["현지어 기업 페이지","구성(IP주소로", "착수계"]$/;"	v
+listNo	PR_Main2.py	/^        listNo = ["소재지가 경상남도 내", "고압가스특정제조(1473)"]$/;"	v
+listOk	PRO_OLD/PR_MAIN.py	/^        listOk = ["매칭·상담·계약 등 全"]$/;"	v
+listOk	PR_Main2.py	/^        listOk = ["세부품명번호 1214190401(산소가스)"]$/;"	v
+matplotlib	SU_Hwp_Read_MO.py	/^import matplotlib.pyplot as plt$/;"	i
+np	PRO_OLD/Pdf_Ocr_Tesseract_tong.py	/^import numpy as np$/;"	i
+olefile	SU_Hwp_Read_MO.py	/^import olefile$/;"	i
+op	PRO_OLD/PR_MAIN.py	/^import openpyxl as op$/;"	i
+op	PRO_OLD/hwp_read_text_sa01.py	/^import openpyxl as op$/;"	i
+op	PR_Main2.py	/^import openpyxl as op$/;"	i
+op	PR_Main3.py	/^import openpyxl as op$/;"	i
+op	PR_Main_Final.py	/^import openpyxl as op$/;"	i
+or_sql	PRO_OLD/PR_MAIN.py	/^    or_sql = "SELECT * FROM T_MON"$/;"	v
+or_sql	PR_Main2.py	/^    or_sql = "SELECT * FROM T_MON"$/;"	v
+or_sql	PR_Main3.py	/^    or_sql = "SELECT * FROM T_MON"$/;"	v
+or_sql	PR_Main_Final.py	/^    or_sql = "SELECT * FROM T_MON"$/;"	v
+os	PRO_OLD/PR_MAIN.py	/^import os$/;"	i
+os	PRO_OLD/Pdf_Ocr_Tesseract_tong.py	/^import os$/;"	i
+os	PRO_OLD/hwp_pdf_convert.py	/^import os$/;"	i
+os	PRO_OLD/hwp_read_text_sa01.py	/^import os$/;"	i
+os	PR_Main2.py	/^import os$/;"	i
+os	PR_Main3.py	/^import os$/;"	i
+os	PR_Main_Final.py	/^import os$/;"	i
+os	SU_Hwp_Read_MO.py	/^import os$/;"	i
+pConvert	PRO_OLD/PR_MAIN.py	/^import PY_PKG.SU_File_Convert as pConvert$/;"	i
+pConvert	PR_Main2.py	/^import PY_PKG.SU_File_Convert as pConvert$/;"	i
+pConvert	PR_Main3.py	/^import PY_PKG.SU_File_Convert as pConvert$/;"	i
+pFile	PRO_OLD/PR_MAIN.py	/^import PY_PKG.SU_DirFile_MO as pFile$/;"	i
+pFile	PR_Main2.py	/^import PY_PKG.SU_DirFile_MO as pFile$/;"	i
+pFile	PR_Main3.py	/^import PY_PKG.SU_DirFile_MO as pFile$/;"	i
+pMail	PRO_OLD/PR_MAIN.py	/^import PY_PKG.SU_Mail_Send_Mo as pMail$/;"	i
+pMail	PR_Main2.py	/^import PY_PKG.SU_Mail_Send_Mo as pMail$/;"	i
+pMail	PR_Main3.py	/^import PY_PKG.SU_Mail_Send_Mo as pMail$/;"	i
+phwp	PRO_OLD/hwp_read_text_sa01.py	/^import PY_PKG.SU_Hwp_Read_MO as phwp$/;"	i
+phwp	PR_Main_Final.py	/^import SU_Hwp_Read_MO as phwp$/;"	i
+platform	PRO_OLD/PR_MAIN.py	/^import platform$/;"	i
+platform	PR_Main2.py	/^import platform$/;"	i
+platform	PR_Main3.py	/^import platform$/;"	i
+platform	PR_Main_Final.py	/^import platform$/;"	i
+plt	SU_Hwp_Read_MO.py	/^import matplotlib.pyplot as plt$/;"	i
+prvStream2txt	SU_Hwp_Read_MO.py	/^    def prvStream2txt(self):$/;"	m	class:HwpReader
+psai	PR_Main2.py	/^import PY_PKG.SU_ALLMO_Init_MO as psai$/;"	i
+psai	PR_Main3.py	/^import PY_PKG.SU_ALLMO_Init_MO as psai$/;"	i
+psfm	PR_Main3.py	/^import PY_PKG.SU_Folder_Monitoring_MO as psfm$/;"	i
+pymysql	PRO_OLD/PR_MAIN.py	/^import pymysql$/;"	i
+pyodbc	PRO_OLD/PR_MAIN.py	/^import pyodbc$/;"	i
+pytesseract	PRO_OLD/Pdf_Ocr_Tesseract_tong.py	/^import pytesseract$/;"	i
+random	PRO_OLD/Pdf_Ocr_Tesseract_tong.py	/^import random$/;"	i
+re	PRO_OLD/hwp_pdf_convert.py	/^import re$/;"	i
+re	PRO_OLD/hwp_read_text_sa01.py	/^import re$/;"	i
+re	PR_Main_Final.py	/^import re$/;"	i
+re	SU_Hwp_Read_MO.py	/^import re$/;"	i
+rowcount	PRO_OLD/PR_MAIN.py	/^            rowcount = rowcount + 1$/;"	v
+rowcount	PRO_OLD/PR_MAIN.py	/^rowcount   = 1$/;"	v
+rowcount	PR_Main2.py	/^            rowcount = rowcount + 1$/;"	v
+rowcount	PR_Main2.py	/^rowcount   = 1$/;"	v
+rowcount	PR_Main3.py	/^            rowcount = rowcount + 1$/;"	v
+rowcount	PR_Main3.py	/^rowcount   = 1$/;"	v
+rowcount	PR_Main_Final.py	/^            rowcount = rowcount + 1$/;"	v
+rowcount	PR_Main_Final.py	/^rowcount   = 1$/;"	v
+rows	PRO_OLD/PR_MAIN.py	/^    rows = GPR_Cursor.fetchall()$/;"	v
+rows	PR_Main2.py	/^    rows = GPR_Cursor.fetchall()$/;"	v
+rows	PR_Main3.py	/^    rows = GPR_Cursor.fetchall()$/;"	v
+rows	PR_Main_Final.py	/^    rows = GPR_Cursor.fetchall()$/;"	v
+saveFile	PRO_OLD/Pdf_Ocr_Tesseract_tong.py	/^saveFile = "c:\\\\work\\\\PLangVim\\\\Procurement\\\\RESULT\\\\res.txt"$/;"	v
+savePath	PRO_OLD/hwp_pdf_convert.py	/^savePath = "c:\\\\temp\\\\pdf\\\\"$/;"	v
+sectionList	SU_Hwp_Read_MO.py	/^    def sectionList(self):$/;"	m	class:HwpReader
+size	SU_Hwp_Read_MO.py	/^    size = 1$/;"	v	class:char
+size	SU_Hwp_Read_MO.py	/^    size = 8$/;"	v	class:extended
+size	SU_Hwp_Read_MO.py	/^    size = 8$/;"	v	class:inline
+strAC	PRO_OLD/PR_MAIN.py	/^            strAC    = str(row[0])$/;"	v
+strAC	PR_Main2.py	/^            strAC    = str(row[0])$/;"	v
+strAC	PR_Main3.py	/^            strAC    = str(row[0])$/;"	v
+strAC	PR_Main_Final.py	/^            strAC    = str(row[0])$/;"	v
+strBC	PRO_OLD/PR_MAIN.py	/^            strBC    = str(row[1])$/;"	v
+strBC	PR_Main2.py	/^            strBC    = str(row[1])$/;"	v
+strBC	PR_Main3.py	/^            strBC    = str(row[1])$/;"	v
+strBC	PR_Main_Final.py	/^            strBC    = str(row[1])$/;"	v
+strLog	PRO_OLD/PR_MAIN.py	/^            strLog   = str(rowcount) + " ===> " + strAC + " , " + strBC$/;"	v
+strLog	PR_Main2.py	/^            strLog   = str(rowcount) + " ===> " + strAC + " , " + strBC$/;"	v
+strLog	PR_Main3.py	/^            strLog   = str(rowcount) + " ===> " + strAC + " , " + strBC$/;"	v
+strLog	PR_Main_Final.py	/^            strLog   = str(rowcount) + " ===> " + strAC + " , " + strBC$/;"	v
+strLogList	PRO_OLD/PR_MAIN.py	/^        strLogList = []$/;"	v
+strLogList	PRO_OLD/PR_MAIN.py	/^strLogList = []$/;"	v
+strLogList	PR_Main2.py	/^        strLogList = []$/;"	v
+strLogList	PR_Main2.py	/^strLogList = []$/;"	v
+strLogList	PR_Main3.py	/^        strLogList = []$/;"	v
+strLogList	PR_Main3.py	/^strLogList = []$/;"	v
+strLogList	PR_Main_Final.py	/^strLogList = []$/;"	v
+strVList	PRO_OLD/hwp_read_text_sa01.py	/^    strVList = hwpReader.get(keyItem)$/;"	v
+strVList	PRO_OLD/hwp_read_text_sa01.py	/^    strVList = strVList.splitlines()$/;"	v
+strdate	PRO_OLD/PR_MAIN.py	/^        strdate = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S')$/;"	v
+strdate	PR_Main2.py	/^        strdate = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S')$/;"	v
+strdate	PR_Main3.py	/^        strdate = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S')$/;"	v
+strdate	PR_Main_Final.py	/^        strdate = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S')$/;"	v
+struct	SU_Hwp_Read_MO.py	/^import struct$/;"	i
+subtext	PRO_OLD/Pdf_Ocr_Tesseract_tong.py	/^subtext = pytesseract.image_to_string(thresh_cv, config=config)$/;"	v
+sys	PRO_OLD/PR_MAIN.py	/^import sys$/;"	i
+sys	PRO_OLD/Pdf_Ocr_Tesseract_tong.py	/^import sys$/;"	i
+sys	PRO_OLD/hwp_pdf_convert.py	/^import sys$/;"	i
+sys	PRO_OLD/hwp_read_text_sa01.py	/^import sys$/;"	i
+sys	PR_Main2.py	/^import sys$/;"	i
+sys	PR_Main3.py	/^import sys$/;"	i
+sys	PR_Main_Final.py	/^import sys$/;"	i
+time	PRO_OLD/PR_MAIN.py	/^import time$/;"	i
+time	PR_Main2.py	/^import time$/;"	i
+time	PR_Main3.py	/^import time$/;"	i
+time	PR_Main_Final.py	/^import time$/;"	i
+userID	PRO_OLD/PR_MAIN.py	/^        userID = "jung100hwa"$/;"	v
+userID	PR_Main2.py	/^        userID = "jung100hwa"$/;"	v
+win32com	PRO_OLD/hwp_pdf_convert.py	/^import win32com.client$/;"	i
+zipfile	PR_Main_Final.py	/^import zipfile$/;"	i
+zlib	SU_Hwp_Read_MO.py	/^import zlib$/;"	i

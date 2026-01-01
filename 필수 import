@@ -1,0 +1,79 @@
+import os
+
+os.environ["KMP_DUPLICATE_LIB_OK"] = "True"
+os.chdir(r"c:\projects\PY_MLE")
+
+import pandas as pd
+import numpy as np
+import re
+from tqdm import tqdm
+from gensim.models.doc2vec import TaggedDocument
+
+import tensorflow as tf
+from tensorflow.keras.datasets import imdb
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.models import Sequential, load_model, Model
+
+from tensorflow.keras.layers import (
+    Input,
+    LSTM,
+    Dense,
+    GlobalAveragePooling1D,
+    SimpleRNN,
+    Embedding,
+    Masking,
+    Bidirectional,
+    Dropout,
+)
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
+from sklearn.model_selection import train_test_split
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras import optimizers
+from tensorflow.keras.layers import Concatenate
+import sentencepiece as spm
+import urllib.request
+import csv
+import unicodedata
+
+
+from kiwipiepy import Kiwi, Match
+
+kiwi = Kiwi()
+Kiwi(
+    num_workers=0,
+    model_path=None,
+    load_default_dict=True,
+    integrate_allomorph=True,
+    model_type="knlm",
+    typos=None,
+    typo_cost_threshold=2.5,
+)
+
+
+check_point_md = ModelCheckpoint(
+    "keras_minist_model.keras",
+    monitor="val_loss",
+    save_best_only=True,
+    mode="auto",
+    verbose=1,
+)
+check_point_st = EarlyStopping(
+    monitor="val_loss", patience=5, restore_best_weights=True, verbose=1
+)
+check_point_rr = ReduceLROnPlateau(
+    monitor="val_loss", factor=0.5, patience=5, verbose=1
+)
+log_dir = "logs/fit/" + datetime.datetime.now().strftime(
+    "%Y%m%d-%H%M%S"
+)  # 여기에 반드시 시간을 줘야 할 듯 안주면 안되는듯.....
+tensorboard_callback = tf.keras.callbacks.TensorBoard(
+    log_dir=log_dir, histogram_freq=1, write_graph=True, write_images=True
+)
+
+# 모델을 이미지로 표현
+tf.keras.utils.plot_model(
+    small_transformer, to_file="small_transformer.png", show_shapes=True
+)
+
+
+os.environ['OPENAI_API_KEY'] ="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"
