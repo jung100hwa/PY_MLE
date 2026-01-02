@@ -6,18 +6,22 @@
 import openai
 import pandas as pd
 
-client = openai.OpenAI(api_key="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")
+from dotenv import load_dotenv
+import os
+load_dotenv()
+openAPI_KEY = os.getenv('openAPI')
+client = openai.OpenAI(api_key=openAPI_KEY)
 
 
 ############################################################# 1. 가장 기초적인 활용
-# completion = client.chat.completions.create(
-#     model="gpt-4o",
-#     messages=[
-#         {"role" : "system", "content" : "답변은 반말로 해줘"}, # 이 부분은 아래 답변에 대한 규칙이나 방향성을 알려주는 역할
-#         {"role" : "user","content" : "2020년 월드시리즈에서는 누가 우승했어?"}
-#     ]
-# )
-# print(completion.choices[0].message.content)
+completion = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[
+        {"role" : "system", "content" : "답변은 반말로 해줘"}, # 이 부분은 아래 답변에 대한 규칙이나 방향성을 알려주는 역할
+        {"role" : "user","content" : "2020년 월드시리즈에서는 누가 우승했어?"}
+    ]
+)
+print(completion.choices[0].message.content)
 
 
 ############################################################# 2. 역활과 함수를 활용
@@ -106,30 +110,30 @@ client = openai.OpenAI(api_key="sk-proj-zbMbqs0JYx-x0Mj_zKkx1OcjoazW5uL5Il1LX3a8
 ############################################################# 4. 조금 확장해서 감성분류를 해보자.
 # 앞에서 수행한 네이버 영화평론을 예로 해보자
 
-def return_answer(input_text=''):
-    system_prompt = """주어진 텍스트가 긍정인지 부정인지 중립인지 예측하시오. 답변은 긍정, 부정, 중립 
-    3가지 형태로 답변을 해야만 합니다. 답변시 주어진 택스트를 같이 출력해야만 합니다.
+# def return_answer(input_text=''):
+#     system_prompt = """주어진 텍스트가 긍정인지 부정인지 중립인지 예측하시오. 답변은 긍정, 부정, 중립 
+#     3가지 형태로 답변을 해야만 합니다. 답변시 주어진 택스트를 같이 출력해야만 합니다.
     
-    ex) "무슨 영화가 이래" ==> "부정"
-    """
+#     ex) "무슨 영화가 이래" ==> "부정"
+#     """
 
-    user_content = input_text
-    completion = client.chat.completions.create(
-        model="gpt-4o",
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_content}
-        ]
-    )
+#     user_content = input_text
+#     completion = client.chat.completions.create(
+#         model="gpt-4o",
+#         messages=[
+#             {"role": "system", "content": system_prompt},
+#             {"role": "user", "content": user_content}
+#         ]
+#     )
 
-    return completion.choices[0].message.content
-
-
-df = pd.read_table('ratings_test.txt')
-df = df['document'].loc[2:5]
+#     return completion.choices[0].message.content
 
 
-for index, _ in enumerate(range(0,len(df))):
-    text = df.iloc[index]
-    result = return_answer(text)
-    print(result)
+# df = pd.read_table('ratings_test.txt')
+# df = df['document'].loc[2:5]
+
+
+# for index, _ in enumerate(range(0,len(df))):
+#     text = df.iloc[index]
+#     result = return_answer(text)
+#     print(result)

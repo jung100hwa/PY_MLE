@@ -1,2 +1,5 @@
 STU_DL_TENSOR_API/summ_test.json
 STU_DL_TENSOR_API/summ_train.json
+.env
+.gitignore
+.gitignore
