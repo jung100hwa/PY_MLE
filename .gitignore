@@ -3,3 +3,7 @@ STU_DL_TENSOR_API/summ_train.json
 .env
 .gitignore
 .gitignore
+STU_DL_TENSOR_API/chroma_test.db/19315445-e6b6-4a75-8d35-377573cf7d30/data_level0.bin
+STU_DL_TENSOR_API/chroma_test.db/19315445-e6b6-4a75-8d35-377573cf7d30/header.bin
+STU_DL_TENSOR_API/chroma_test.db/19315445-e6b6-4a75-8d35-377573cf7d30/link_lists.bin
+STU_DL_TENSOR_API/chroma_test.db/19315445-e6b6-4a75-8d35-377573cf7d30/length.bin
